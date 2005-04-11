@@ -1,0 +1,5 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1259
+
+This color scheme has both dark and light styles with harmonic colors easy to distinguish. Terminals are not supported, therefore you should only try it if you use the GUI version of Vim.
+
+The versions of this color scheme older than 1.20 contain the light style only.
