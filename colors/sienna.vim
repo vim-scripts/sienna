@@ -1,11 +1,11 @@
 " Vim colour scheme
 " Maintainer:	Georg Dahn
-" Last Change:	11 April 2004
-" Version:	1.00
+" Last Change:	28 April 2005
+" Version:	1.10
 "
-" This color scheme has a light background (WhiteSmoke) and harmonic
-" colors which are easy to distinguish. Terminals are not supported,
-" therefore you should only try it if you use the GUI version of Vim.
+" This color scheme has a light background and harmonic colors which
+" are easy to distinguish. Terminals are not supported, therefore you
+" should only try it if you use the GUI version of Vim.
 
 set background=light
 hi clear
@@ -14,30 +14,27 @@ if exists("syntax_on")
 endif
 let g:colors_name="sienna"
 
-hi Normal gui=none guifg=Black guibg=WhiteSmoke
+hi Normal gui=none guifg=Black guibg=White
 
-hi Cursor guifg=WhiteSmoke guibg=RoyalBlue3
-hi Directory gui=none guifg=Blue
-hi ErrorMsg gui=none guifg=WhiteSmoke guibg=Red
-hi FoldColumn gui=none guifg=DarkGray guibg=WhiteSmoke
-hi Folded gui=none guifg=Black guibg=Wheat
-hi IncSearch gui=none guifg=WhiteSmoke guibg=Black
-hi LineNr gui=none guifg=DarkGray
+hi Cursor guifg=White guibg=RoyalBlue3
+hi FoldColumn gui=none guifg=Black guibg=Wheat2
+hi Folded gui=none guifg=Black guibg=Wheat1
+hi IncSearch gui=none guifg=White guibg=Black
+hi LineNr gui=none guifg=DarkGray guibg=White
 hi MoreMsg gui=bold guifg=ForestGreen
-hi NonText gui=bold guifg=DarkGray
+hi NonText gui=bold guifg=DarkGray guibg=WhiteSmoke
 hi Question gui=bold guifg=ForestGreen
 hi SpecialKey gui=none guifg=Sienna3
-hi StatusLine gui=bold guifg=WhiteSmoke guibg=Black
-hi StatusLineNC gui=none guifg=WhiteSmoke guibg=DarkGray
+hi StatusLine gui=bold guifg=White guibg=Black
+hi StatusLineNC gui=none guifg=White guibg=DarkGray
 hi Title gui=bold guifg=Black
-hi VertSplit gui=none guifg=WhiteSmoke guibg=DimGray
+hi VertSplit gui=none guifg=White guibg=DimGray
 hi Visual gui=none guifg=Black guibg=Sienna1
 hi WarningMsg gui=bold guifg=Red
 hi Wildmenu gui=bold guifg=Black guibg=Yellow
 
 hi Comment gui=none guifg=RoyalBlue3
 hi Constant gui=none guifg=ForestGreen
-hi Error gui=none guifg=WhiteSmoke guibg=Red
 hi Identifier gui=none guifg=Sienna4
 hi Special gui=none guifg=Sienna3
 hi Statement gui=bold guifg=Sienna4
