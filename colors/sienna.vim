@@ -1,7 +1,7 @@
 " Vim colour scheme
 " Maintainer:	Georg Dahn
-" Last Change:	7 August 2005
-" Version:	1.4.1
+" Last Change:	23 September 2005
+" Version:	1.5
 "
 " This color scheme has both light and dark styles with harmonic colors
 " easy to distinguish. Terminals are not supported, therefore you should
@@ -42,34 +42,45 @@ endif
 let g:colors_name = 'sienna'
 
 if s:sienna_style == 'dark'
-    hi Normal gui=none guifg=Grey85 guibg=Grey20
+    hi Normal gui=none guifg=Grey85 guibg=Grey15
 
-    hi Cursor guifg=Black guibg=White
+    hi Cursor guifg=Black guibg=Grey85
+    hi LineNr gui=none guifg=Grey65
+    hi NonText gui=bold guifg=Grey65 guibg=Grey20
+    hi SpecialKey gui=none guifg=SkyBlue2
+    hi Title gui=bold guifg=White
+    hi Visual gui=bold guifg=Black guibg=LightSalmon1
+
     hi FoldColumn gui=none guifg=Black guibg=Wheat3
     hi Folded gui=none guifg=White guibg=Wheat4
-    hi IncSearch gui=none guifg=Grey25 guibg=Grey85
-    hi LineNr gui=none guifg=Grey65
-    hi MoreMsg gui=bold guifg=PaleGreen2
-    hi NonText gui=bold guifg=Grey65 guibg=Grey25
-    hi Question gui=bold guifg=PaleGreen2
-    hi SpecialKey gui=none guifg=LightSalmon2
-    hi StatusLine gui=bold guifg=White guibg=SkyBlue4
-    hi StatusLineNC gui=none guifg=White guibg=DarkGray
-    hi Title gui=bold guifg=White
+    hi StatusLine gui=bold guifg=Black guibg=Grey85
+    hi StatusLineNC gui=none guifg=White guibg=DimGray
     hi VertSplit gui=none guifg=White guibg=DimGray
-    hi Visual gui=bold guifg=Black guibg=LightSalmon1
+    hi Wildmenu gui=bold guifg=White guibg=Black
+
+    hi IncSearch gui=none guifg=Grey15 guibg=Grey85
+    hi Search gui=none guifg=Black guibg=Yellow2
+
+    hi MoreMsg gui=bold guifg=PaleGreen2
+    hi Question gui=bold guifg=PaleGreen2
     hi WarningMsg gui=bold guifg=Red
-    hi Wildmenu gui=bold guifg=Black guibg=Yellow
 
     hi Comment gui=italic guifg=SkyBlue3
-    hi Constant gui=none guifg=PaleGreen2
+    hi Error gui=none guifg=White guibg=Red2
     hi Identifier gui=none guifg=LightSalmon2
-    hi Special gui=none guifg=LightSalmon2
+    hi Special gui=none guifg=SkyBlue2
+    hi PreProc gui=none guifg=SkyBlue3
+    hi Todo gui=bold guifg=Black guibg=Yellow2
+    hi Type gui=bold guifg=SkyBlue2
+    hi Underlined gui=underline guifg=DodgerBlue
+
+    hi Boolean gui=bold guifg=PaleGreen2
+    hi Constant gui=none guifg=PaleGreen2
+    hi Number gui=bold guifg=PaleGreen2
+    hi String gui=none guifg=PaleGreen2 guibg=Grey10
+
     hi Label gui=bold,underline guifg=LightSalmon2
     hi Statement gui=bold guifg=LightSalmon2
-    hi Todo gui=bold,underline guifg=Black guibg=Yellow
-    hi Type gui=bold guifg=SkyBlue2
-    hi PreProc gui=none guifg=SkyBlue2
 
     hi htmlBold gui=bold
     hi htmlItalic gui=italic
@@ -79,35 +90,45 @@ if s:sienna_style == 'dark'
     hi htmlBoldUnderlineItalic gui=bold,underline,italic
     hi htmlUnderlineItalic gui=underline,italic
 elseif s:sienna_style == 'light'
-    hi Normal gui=none guifg=Black guibg=White
+    hi Normal gui=none guifg=Black guibg=Grey95
 
     hi Cursor guifg=White guibg=Black
+    hi LineNr gui=none guifg=DarkGray
+    hi NonText gui=bold guifg=DarkGray guibg=Grey90
+    hi SpecialKey gui=none guifg=RoyalBlue4
+    hi Title gui=bold guifg=Black
+    hi Visual gui=bold guifg=Black guibg=Sienna1
+
     hi FoldColumn gui=none guifg=Black guibg=Wheat2
     hi Folded gui=none guifg=Black guibg=Wheat1
-    hi IncSearch gui=none guifg=White guibg=Black
-    hi LineNr gui=none guifg=DarkGray
-    hi MoreMsg gui=bold guifg=ForestGreen
-    hi NonText gui=bold guifg=DarkGray guibg=Grey95
-    hi Question gui=bold guifg=ForestGreen
-    hi SpecialKey gui=none guifg=Sienna3
-    hi StatusLine gui=bold guifg=White guibg=RoyalBlue4
-    hi StatusLineNC gui=none guifg=White guibg=DarkGray
-    hi Title gui=bold guifg=Black
+    hi StatusLine gui=bold guifg=White guibg=Black
+    hi StatusLineNC gui=none guifg=White guibg=DimGray
     hi VertSplit gui=none guifg=White guibg=DimGray
-    hi Visual gui=bold guifg=Black guibg=Sienna1
+    hi Wildmenu gui=bold guifg=Black guibg=White
+
+    hi IncSearch gui=none guifg=White guibg=Black
+    hi Search gui=none guifg=Black guibg=Yellow
+
+    hi MoreMsg gui=bold guifg=ForestGreen
+    hi Question gui=bold guifg=ForestGreen
     hi WarningMsg gui=bold guifg=Red
-    hi Wildmenu gui=bold guifg=Black guibg=Yellow
 
     hi Comment gui=italic guifg=RoyalBlue3
-    hi Constant gui=none guifg=ForestGreen
+    hi Error gui=none guifg=White guibg=Red
     hi Identifier gui=none guifg=Sienna4
-    hi Special gui=none guifg=Sienna4
+    hi Special gui=none guifg=RoyalBlue4
+    hi PreProc gui=none guifg=RoyalBlue3
+    hi Todo gui=bold guifg=Black guibg=Yellow
+    hi Type gui=bold guifg=RoyalBlue4
+    hi Underlined gui=underline guifg=Blue
+
+    hi Boolean gui=bold guifg=ForestGreen
+    hi Constant gui=none guifg=ForestGreen
+    hi Number gui=bold guifg=ForestGreen
+    hi String gui=none guifg=ForestGreen guibg=White
+
     hi Label gui=bold,underline guifg=Sienna4
     hi Statement gui=bold guifg=Sienna4
-    hi Todo gui=bold,underline guifg=Black guibg=Yellow
-    hi Type gui=bold guifg=RoyalBlue4
-    hi PreProc gui=none guifg=RoyalBlue4
-    hi Underlined gui=underline guifg=Blue
 
     hi htmlBold gui=bold
     hi htmlItalic gui=italic
