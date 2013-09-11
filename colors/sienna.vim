@@ -45,6 +45,9 @@ if s:sienna_style == 'dark'
     hi Normal gui=none guifg=Grey85 guibg=Grey15
 
     hi Cursor guifg=Black guibg=Grey85
+    hi CursorColumn guibg=Grey25
+    hi CursorLine guibg=Grey25
+    hi CursorLineNr gui=bold guifg=Grey65
     hi LineNr gui=none guifg=Grey65
     hi NonText gui=bold guifg=Grey65 guibg=Grey20
     hi SpecialKey gui=none guifg=SkyBlue2
@@ -98,6 +101,9 @@ elseif s:sienna_style == 'light'
     hi Normal gui=none guifg=Black guibg=White
 
     hi Cursor guifg=White guibg=Black
+    hi CursorColumn guibg=Grey90
+    hi CursorLine guibg=Grey90
+    hi CursorLineNr gui=bold guifg=DarkGray
     hi LineNr gui=none guifg=DarkGray
     hi NonText gui=bold guifg=DarkGray guibg=Grey95
     hi SpecialKey gui=none guifg=RoyalBlue4
