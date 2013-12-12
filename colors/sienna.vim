@@ -54,7 +54,7 @@ if s:sienna_style == 'dark'
     hi Title gui=bold guifg=Grey85
     hi Visual gui=bold guifg=Black guibg=LightSalmon1
 
-    hi FoldColumn gui=none guifg=Black guibg=Wheat3
+    hi FoldColumn gui=none guifg=Black guibg=bg
     hi Folded gui=none guifg=White guibg=Wheat4
     hi StatusLine gui=bold guifg=Black guibg=Grey85
     hi StatusLineNC gui=none guifg=White guibg=DimGray
@@ -110,7 +110,7 @@ elseif s:sienna_style == 'light'
     hi Title gui=bold guifg=Black
     hi Visual gui=bold guifg=Black guibg=Sienna1
 
-    hi FoldColumn gui=none guifg=Black guibg=Wheat2
+    hi FoldColumn gui=none guifg=Black guibg=bg
     hi Folded gui=none guifg=Black guibg=Wheat1
     hi StatusLine gui=bold guifg=White guibg=Black
     hi StatusLineNC gui=none guifg=White guibg=DimGray
